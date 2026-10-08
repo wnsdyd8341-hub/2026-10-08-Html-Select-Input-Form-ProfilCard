@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Option</title>
+    </head>
+    <body>
+        <select>
+            <option value="과일">과일</option>
+            <!-- selected 선택된 상태  -->
+            <option value="사과" selected>사과</option>
+            <option value="사과" >사과</option>
+            <option value="사과">사과</option>
+        </select>
+        <!-- 여러개 선택 -->
+        <select multiple>
+            <option value="축구">축구</option>
+            <option value="농구" >농구</option>
+            <!-- disabled = 선택불가 (비활성화) -->
+            <option value="" disabled>배구(마감)</option>
+            <option value="">야구</option>
+        </select><br><br>
+        <!-- size = 보이는 갯수 -->
+        <select size="2">
+            <option value="축구">축구</option>
+            <option value="농구" >농구</option>
+            <!-- disabled = 선택불가 (비활성화) -->
+            <option value="" disabled>배구(마감)</option>
+            <option value="">야구</option>
+        </select>
+
+        <!-- 옵션들 그룹으로 만들기 -->
+        <select>
+            <optgroup label="서울"> 
+                <option value="">강북</option>
+                <option value="">강남</option>
+                <option value="">강서</option>
+            </optgroup>
+            <optgroup label="대구">
+                <option value="">동구</option>
+                <option value="">중구</option>
+                <option value="">서구</option>
+            </optgroup>
+        </select>
+    </body>
+</html>

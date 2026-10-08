@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        .contact-form{
+            width: 500px;
+            border: 1px solid #333;
+            padding: 40px;
+            margin: 50px auto;
+        }
+        .contact-form h2{
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+        }
+        .contact-form input,.contact-form select,.contact-form textarea{
+            width: 40%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            
+        }
+        textarea{
+            display: block;
+            height: 100px;
+            /* 입력내용 길어지면 스크롤 생기는거 */
+            resize: vertical;
+        }
+        button{
+            all: unset;
+            width: 100%;
+            background-color: #333;
+            border: 1px solid #fff;
+            color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 14px;
+            margin-top: 10px;
+        }
+        button:hover{
+            background-color: #555;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="contact-form">
+        <h2>문의하기</h2>
+        <label for="name">이름</label> 
+        <input type="text" name="이름" id="name" placeholder="이름을 입력하세요"><br><br>
+        
+        <label for="email">이메일</label>
+        <input type="email"  id="email" placeholder="이메일을 입력하세요"><br><br>
+
+        <label for="category">문의 유형</label>
+        <select id="category" >
+            <option>문의 유형을 선택해주세요</option>
+            <option>상품 문의</option>
+            <option>배송 문의</option>
+            <option>환불 문의</option>
+            <option>기타 문의</option>
+        </select><br><br>
+
+        <label for="message">문의 내용</label>
+        <textarea  id="message"placeholder = "문의 내용을 입력해주세요"></textarea>
+        <button type="submit">문의하기</button>
+    </form>
+</body>
+</html>

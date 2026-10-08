@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>멤버 4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Isometra&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Playwrite+BE+WAL+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        ul,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color:#333;
+        }
+        section{
+            width: 390px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgba(0,0,0,10%) ;
+            background-color: #fff;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu a{
+            font-size: 18px;
+        }
+        .profil {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px;
+        }
+        .profil .profil_img{
+            width: 200px;
+            overflow: hidden;
+            transition: all 0.3f;
+            border-radius: 50%;
+        }
+        .profil .profil_img img{
+            width: 100%;
+            display: block;
+        }
+        .profil .profil_img img:hover{
+            transform: scale(1.1); 
+            cursor: pointer;
+        }
+        .profil_name{
+            font-family: "Roboto", sans-serif;
+        }
+        .profil_name h2{
+            text-transform: uppercase;
+        }
+        .profil_name h4{
+            color: rgba(0,0,0,20%);
+        }
+
+        .profil_button .btn_view{
+            padding: 8px 16px;
+            margin: 10px auto;
+            color: #fff;
+            border-radius: 30px;
+            display: block;
+            background: linear-gradient(45deg,#10fcf0,#7592fc);
+            box-shadow: 3px 3px 20px rgba(58,212,255,50%);
+        }
+        .link_contact{
+            padding: 20px;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact li{
+            color: #888;
+        }
+        .contact li:first-child{
+            border-bottom: 1px solid #b92727;
+            padding: 10px 0px;
+        }
+        .fa-envelope{
+            font-size: 14px;
+        }
+        .contact span{
+            font-family: "Roboto", sans-serif;
+        }
+        
+        .others{
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            
+        }
+        .others a{
+            width: 30px;
+            height: 30px;
+            background-color: #e8a9f3;
+            border-radius: 50%;
+            filter: saturate(0.7);
+            opacity: 0.4;
+        }
+        .others a:nth-of-type(1){
+            /* a태그면서 첫번째 자식 찾는거 */
+            background-color: #35e0f7;
+        }
+        .others a:nth-of-type(2){
+            /* a태그면서 두번째 자식 찾는거 */
+            background-color: #55f5cd;
+        }
+        .others a:nth-of-type(3){
+            /* a태그면서 세번째 자식 찾는거 */
+            background-color: #ff80df;
+        }
+        .others a:nth-of-type(4){
+            /* a태그면서 네번째 자식 찾는거 */
+            background-color: #a794fd;
+        }
+        .others a.on{
+            opacity: 1;
+            filter: saturate(1);
+        } 
+    </style>
+</head>
+<body>
+    <!-- 프로필 카드 -->
+    <section>
+        <!-- 상단 메뉴 -->
+        <nav class="menu">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <a href="#"><i class="fa-regular fa-note-sticky"></i></a>
+        </nav>
+        <!-- 프로필 영역 -->
+        <div class="profil">
+            <div class="profil_img">
+                <img src="images/member4.jpg" alt="">
+            </div>
+            <div class="profil_name">
+                <h2>nam gung </h2>
+                <h4>ul/ux Developer</h4>
+            </div>
+            <div class="profil_button">
+                <a href="#" class="btn_view">view more</a>
+            </div>
+
+        </div>
+
+        <!-- 연락처 영역 -->
+        <div class="link_contact">
+            <ul class="contact">
+                <li><i class="fa-brands fa-square-facebook"></i></i><a href=""><span>Visit My Facebook page.</span></a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href=""><span>example@example.com</span></a></li>
+            </ul>
+
+        </div>
+
+        <!-- 멤버별 프로필 링크 영역 -->
+        <nav class="others">
+            <a href="index.html"></a>
+            <a href="member2.html"></a>
+            <a href="member3.html"></a>
+            <a class = "on" href="member4.html"></a>
+
+
+        </nav>
+
+
+    </section>
+</body>
+</html>

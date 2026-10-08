@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 500px;
+            padding: 40px;
+            margin: 30px auto;
+            border: 1px solid #333;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+        .box label, .box .category,.box textarea{
+            display: block;
+            
+        }
+        .box textarea{
+            height: 40px;
+            resize: vertical;
+        }
+        button{
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px  ;
+            background-color: #333;
+            color: #fff;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: #555;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form class="box">
+        <h1>문의하기</h1>
+
+        <label for="name">이름</label>
+        <input type="text" id="name" placeholder="이름 입력 :">
+        <label for="age">나이</label>
+        <input type="number" id="age" min="1" max="110">
+
+        <label for="category">거주지</label>
+        <select id="category">
+            <option value="">대구</option>
+            <option value="">부산</option>
+            <option value="">서울</option>
+            <option value="">대전</option>
+            <option value="">울산</option>
+        </select>
+        <label for="t">문의 내용</label>
+        <textarea id="t"></textarea>
+        <button type="submit">문의하기</button>
+    </form>
+</body>
+</html>
